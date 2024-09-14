@@ -12,12 +12,12 @@
 
 <div style="display: inline_block" ><br>
     <h3>📜 Documentação </h3>
-    <a href="https://github.com/Nillocoelho/ProjetoBD2/blob/main/documents/roteiro.pdf">🔎 Clique aqui</a>
+    <a href="https://github.com/Nillocoelho/ProjetoBD2/blob/main/documents/Documenta%C3%A7%C3%A3o_Projeto_BD2.pdf">🔎 Clique aqui</a>
 </div>
 
 <div style="display: inline_block" ><br>
     <h3>📘 Objetivo</h3>
-    <p>Construir um banco de dados que respeite as <a href="https://github.com/Nillocoelho/ProjetoBD2/blob/main/documents/Documenta%C3%A7%C3%A3o_Projeto_BD2.pdf">regras de negócio</a> estabelecidas previamente para o projeto.</p>
+    <p>Construir um banco de dados que respeite as <a href="https://github.com/Nillocoelho/ProjetoBD2/blob/main/documents/roteiro.pdf">regras de negócio</a> estabelecidas previamente para o projeto.</p>
 </div>
 
 <div style="display: inline_block" ><br>
