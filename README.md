@@ -7,7 +7,7 @@
 </p>
 
 <div align="center">
-  <img src="./assets/banco.png" height="500" width="700"><br>
+  <img src="./assets/bancopreview.png" height="500" width="700"><br>
 </div>
 
 <div style="display: inline_block" ><br>
