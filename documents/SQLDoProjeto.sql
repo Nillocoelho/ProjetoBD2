@@ -331,8 +331,19 @@ JOIN
 REQUER R ON  M.codMaterial = R.material_solicitado;
 
 select * from ANALISE_MAT
--- Função SUM
-SELECT SUM(salario) from engenheiro_civil;
+
+-- Cria a função para somar os salários dos engenheiros e exibir a soma total
+CREATE OR REPLACE FUNCTION soma_salarios_engenheiros()
+RETURNS VOID AS $$
+DECLARE
+    soma_salarial NUMERIC(10,2);
+BEGIN
+    -- Faz a soma dos salários dos engenheiros
+    SELECT SUM(salario) INTO soma_salarial FROM ENGENHEIRO_CIVIL;
+    -- Exibe a soma total dos salários com um RAISE NOTICE
+    RAISE NOTICE 'A soma dos salários dos engenheiros é: %', soma_salarial;
+END;
+$$ LANGUAGE plpgsql;
 
 -- Duas functions
 CREATE OR REPLACE FUNCTION mostra_engenheiros_por_especializacao(v_especializacao IN ENGENHEIRO_CIVIL.especialidade%TYPE) 
@@ -379,7 +390,7 @@ EXCEPTION
 END;
 $$ LANGUAGE plpgsql;
 
--- Procedure com exception
+-- Procedure
 CREATE OR REPLACE PROCEDURE mostra_quantidade_projetos(nome_cliente VARCHAR)
 AS $$
 DECLARE
